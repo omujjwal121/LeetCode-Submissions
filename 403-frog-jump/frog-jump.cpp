@@ -15,7 +15,7 @@ public:
         if(stones[1]-stones[0]>1) return false;
         map<int ,int>mp;
         for(int i=0;i<n;i++) mp[stones[i]] = i;
-        vector<vector<int>> dp(2004, vector<int> (10000, -1));
+        vector<vector<int>> dp(n, vector<int> (n+1, -1));
 
         return ans(n-1, stones, 1, 1, mp, dp);
     }
