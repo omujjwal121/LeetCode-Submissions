@@ -36,7 +36,7 @@ class Solution {
         {
             if(ans && vis.get(i)==null) {
                 vis.put(i, true);
-                inPath.clear();
+                // inPath.clear();
                 ans = ans && check(i, inPath, graph);
             }
         }
