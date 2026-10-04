@@ -21,7 +21,7 @@ class Solution {
         return temp;
     }
     public boolean canFinish(int n, int[][] pre) {
-        vis.clear();
+        // vis.clear();
         Map<Integer, ArrayList<Integer>> graph = new HashMap<>();
         for(var it : pre)
         {
